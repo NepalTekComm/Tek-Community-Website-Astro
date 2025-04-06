@@ -1,0 +1,159 @@
+---
+export const currentYear = new Date().getFullYear();
+---
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Left Side: Logo and Short Description -->
+    <div class="footer-left">
+      <h2>Nepal Tek Community</h2>
+      <p>Building the future of Nepal's tech ecosystem.</p>
+    </div>
+
+    <!-- Right Side: Quick Links and Social -->
+    <div class="footer-right">
+      <!-- Quick Links Section -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2023 - {currentYear} Nepal Tek Community | All rights reserved.</p>
+    <p><a href="/terms">Terms & Conditions</a> | <a href="/privacy">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 3rem 1rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .footer-left {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .footer-left h2 {
+    color: #FFA500;
+    font-size: 1.8rem;
+  }
+
+  .footer-left p {
+    color: #ccc;
+    max-width: 300px;
+    margin-top: 0.5rem;
+  }
+
+  .footer-right {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 3rem;
+    min-width: 250px;
+  }
+
+  .footer-links h3,
+  .footer-social h3 {
+    font-size: 1.2rem;
+    color: #FFA500;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: #FFA500;
+  }
+
+  .footer-social .social-icons a {
+    color: #ccc;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+  }
+
+  .footer-social .social-icons a:hover {
+    color: #FFA500;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
+  .footer-bottom a {
+    color: #FFA500;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-right {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .footer-links,
+    .footer-social {
+      align-items: center;
+    }
+  }
+</style>

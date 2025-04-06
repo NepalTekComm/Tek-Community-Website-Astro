@@ -1,0 +1,81 @@
+
+
+<header>
+  <div class="navbar">
+    <div class="logo">
+      <h1><a href="/">Nepal Tek</a></h1> <!-- Use the standard anchor tag for links -->
+    </div>
+    <div class="nav-links">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li> <!-- Standard anchor tags for navigation -->
+          <li><a href="/events">Events</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/stories">Stories</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<style>
+  /* General Styles for Header */
+  header {
+    background-color: #1f1f1f; /* Dark background */
+    color: white;
+    padding: 1rem 2rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* Navbar container */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Logo section */
+  .logo h1 {
+    color: #007BFF; /* Blue Color for Logo */
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+  }
+
+  /* Navigation links in the center */
+  .nav-links {
+    flex: 1;
+    text-align: center;
+  }
+
+  /* Navigation links list */
+  .nav-links nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* Align links horizontally */
+  }
+
+  .nav-links nav ul li {
+    margin: 0 2rem;
+  }
+
+  /* Styling for Navigation Links */
+  .nav-links nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+
+  /* Hover Effect */
+  .nav-links nav ul li a:hover {
+    color: #007BFF; /* Blue color on hover */
+  }
+</style>
