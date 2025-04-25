@@ -1,7 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/shared/Navbar.astro";
+import Hero from "../components/shared/Hero.astro";
 ---
 
-<Layout pageTitle="Nepal Tek Community - Home">
-	<h2>Welcome to Nepal Tek Community</h2>
+<Layout>
+  <Navbar />
+  <Hero />
 </Layout>
